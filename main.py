@@ -88,6 +88,8 @@ def play_game():
                     if 0 <= row <= 2 and 0 <= col <= 2 and board[row][col] == '-':
                         board[row][col] = 'X'
                         break
+                    elif row > 3 or col > 3:
+                        print('Потрібне число від 1 до 3. Спробуйте ще раз.')
                     else:
                         print('Комірка вже зайнята. Спробуйте ще раз.')
                 except ValueError:
